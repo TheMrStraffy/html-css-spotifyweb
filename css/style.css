@@ -111,6 +111,7 @@ main{
 /* Separate card CALC */
 .card{
   width: calc(100% / 6);
+  
 }
 /* Separate card CALC */
 /* Recently Played */
@@ -136,14 +137,13 @@ footer{
   align-items: center;
 }
 .left-f > *:not(:first-child){
-  padding: 0 10px;
+  padding: 0 5px;
 }
 .left-f .img-box-f{
   width: 50px;
   height: 50px;
 }
 .left-f img{
-  /* width:100%; */
   width: 50px;
   height: 50px;
 }
@@ -159,12 +159,14 @@ footer{
 .player i{
   padding: 0 10px;
 }
-/* .length-player{
-
-} */
-
+.length-player{
+  width: 70%;
+  justify-content: center;
+} 
+.length-player span{
+  padding: 0 15px;
+}
 .time-bar{
-  padding: 0 20px;
   align-self: center;
   height: 5px;
   width: 430px;

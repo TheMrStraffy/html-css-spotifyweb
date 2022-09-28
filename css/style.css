@@ -5,52 +5,82 @@
 }
 
 
-/* utilities */
+/* --------------------------utilities----------------------------- */
 .d-flex{
   display: flex;
 }
 
-/* debug */
+/* --------------------------debug */
 .debug{
   /* debug */
   background-color: rgba(127, 255, 212, 0.411);
 }
 
-/* header */
+/* --------------------------header----------------------------- */
 header{
   position: fixed;
   top: 0;
   right: 0;
   height: 90px;
   width: 100%;
+  justify-content: space-between;
+  align-items: center;
   /* debug */
   background-color: rgba(242, 255, 127, 0.411);
 }
+.logo{
+  padding-left: 30px;
+}
+.logo img{
+  filter: invert(1);
+  width: 70%;
+}
 
-/* main */
+/* --------------------------main----------------------------- */
 main{
+  
   height: calc(100vh - 90px);
   /* debug */
   background-color: rgba(193, 127, 255, 0.411);
 }
-.right-menu{
-  padding-top: 100px;
-  width: 80%;
-  /* debug */
-  background-color: rgba(255, 127, 127, 0.411);
-}
-.left-menu{
+/* --------------------------left menu----------------------------- */
+.left{
+  
   padding-top: 100px;
   width: 20%;
   /* debug */
   background-color: rgba(0, 0, 0, 0.411);
 }
+ .left-menu{
 
-/* footer */
+  height: 100%;
+  overflow-y: auto;
+  flex-direction: column;
+
+  /* debug */
+  /* background-color: rgba(0, 0, 0, 0.411); */
+} 
+
+/* --------------------------right menu----------------------------- */
+.right{
+  padding-top: 100px;
+  width: 80%;
+  /* debug */
+  background-color: rgba(255, 127, 127, 0.411);
+}
+.right-menu{
+  height: 100%;
+  /* debug */
+  background-color: rgba(255, 127, 127, 0.411);
+}
+
+
+/* --------------------------footer----------------------------- */
 
 footer{
+  z-index: 999;
   height: 90px;
   /* debug */
-  background-color: rgba(127, 255, 133, 0.411);
+  background-color: rgb(127, 255, 133);
 }
 

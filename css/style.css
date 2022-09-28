@@ -3,11 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+.img-box{
+  width: 220px;
+  height: 220px;
+  /* debug */
+  background-color: rgba(0, 255, 255, 0.438);
+}
 
-
+/* --------------------------Global----------------------------- */
+ul li{
+  list-style-type: none;
+}
 /* --------------------------utilities----------------------------- */
 .d-flex{
   display: flex;
+}
+.w-calc{
+  width: calc(100% / 6);
 }
 
 /* --------------------------debug */
@@ -35,6 +47,9 @@ header{
   filter: invert(1);
   width: 70%;
 }
+.upgrade{
+  margin-right: 40px;
+}
 
 /* --------------------------main----------------------------- */
 main{
@@ -52,7 +67,7 @@ main{
   background-color: rgba(0, 0, 0, 0.411);
 }
  .left-menu{
-
+  padding-left: 20px;
   height: 100%;
   overflow-y: auto;
   flex-direction: column;
@@ -60,18 +75,47 @@ main{
   /* debug */
   /* background-color: rgba(0, 0, 0, 0.411); */
 } 
+.bottom-left-menu{
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+}
+.user img{
+  background-color: lightgray;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
 
 /* --------------------------right menu----------------------------- */
 .right{
+  overflow-y: auto;
   padding-top: 100px;
   width: 80%;
   /* debug */
   background-color: rgba(255, 127, 127, 0.411);
 }
 .right-menu{
+  padding-left: 20px;
   height: 100%;
   /* debug */
   background-color: rgba(255, 127, 127, 0.411);
+}
+.right-nav ul{
+  justify-content: center;
+}
+.right-nav ul li{
+  padding: 20px;
+}
+/* Separate card CALC */
+.card{
+  width: calc(100% / 6);
+}
+/* Separate card CALC */
+/* Recently Played */
+.recently-list{
+  flex-wrap: wrap;
 }
 
 

@@ -1,0 +1,36 @@
+@media screen and (max-width: 1040px) {
+  .card{
+    width: calc(100% / 4);
+  }
+}
+@media screen and (max-width: 726px) {
+  .card{
+    width: calc(100% / 2);
+  }
+}
+@media screen and (max-width: 604px) {
+  #standard-logo{
+    display: none;
+  }
+  .right{
+    width: 90%;
+  }
+  .left{
+    width: 10%;
+  }
+  .left-menu{
+    display: none;
+  }
+  #hidden{
+    display: block;
+  }
+  header .logo{
+    padding-left: 20px;
+  }
+  #hidden-logo{
+    display: block;
+    width: 25px;
+    
+  }
+
+}

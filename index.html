@@ -6,32 +6,54 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==' crossorigin='anonymous'/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media-query.css">
   <title>Spotify</title>
 </head>
 <body>
   <!-- ---------------HEADER------------------------- -->
   <header class="d-flex">
+
     <div class="logo">
-      <img src="img/logo.svg" alt="">
+      <img id="hidden-logo" src="img/logo-small.svg" alt="">
+      <img id="standard-logo" src="img/logo.svg" alt="">
     </div>
     <div class="upgrade">
-      EFFETTUA L&apos;UPGRADE
+      <a href="#">
+        EFFETTUA L&apos;UPGRADE
+      </a>
     </div>
   </header>
 
   <main class="d-flex">
     <!-- ---------------LEFT MENU------------------------- -->
     <div class="left">
+      <nav class="left-menu d-flex" id="hidden">
 
+        <ul class="mb">
+            <li><a href="">
+              <img src="img/home.svg" alt="">
+            </a></li>
+            <li><a href="">
+              <img src="img/search.svg" alt="">
+            </a></li>
+            <li><a href="">
+              <img src="img/libreria.svg" alt="">
+            </a></li>
+        </ul>
+      </nav>
       <nav class="left-menu d-flex">
+        
         <ul>
           <li><a href="#">
+            <img src="img/home.svg" alt="">
             Home
           </a></li>
           <li><a href="#">
+            <img src="img/search.svg" alt="">
             Cerca
           </a></li>
           <li><a href="#">
+            <img src="img/libreria.svg" alt="">
             Libreria
           </a></li>
         </ul>
@@ -41,7 +63,7 @@
           <span>Crea Playlist</span>
         </div>
       
-        <ul>
+        <ul class="">
           <li><a href="#">Nome Playlist</a></li>
           <li><a href="#">Nome Playlist</a></li>
           <li><a href="#">Nome Playlist</a></li>
@@ -52,12 +74,12 @@
         </ul>
         <div class="bottom-left-menu d-flex">
           <div class="dwnld-app">
-            <i class="fa-regular fa-circle-down"></i>
+            <img src="img/download.svg" alt="">
             <span>Installa App</span>
           </div>
           <div class="user">
             <img src="img/profile.svg" alt="">
-            <span>Johne Doe</span>
+            <span>John Doe</span>
           </div>
         </div>
       </nav>
@@ -81,81 +103,80 @@
         </nav>
         <!-- Recently Played -->
         <h2>Recently Played</h2>
-        <div class="recently-list d-flex">
+        <div class="right-section d-flex">
           <div class="card">
             <div class="img-box">
-              <img src="" alt="">
+              <img src="img/metal_lifting.jpg" alt="">
+              <h3>Heavy Metal</h3>
+              <p>Subtitle</p>
             </div>
-            <h3>Heavy Metal</h3>
-            <p>Subtitle</p>
           </div>
           <div class="card">
             <div class="img-box">
-              <img src="" alt="">
+              <img src="img/stranger.jpeg" alt="">
+              <h3>Heavy Metal</h3>
+              <p>Subtitle</p>
             </div>
-            <h3>Heavy Metal</h3>
-            <p>Subtitle</p>
           </div>
           <div class="card">
             <div class="img-box">
-              <img src="" alt="">
+              <img src="img/aquietplace.jpeg" alt="">
+              <h3>Heavy Metal</h3>
+              <p>Subtitle</p>
             </div>
-            <h3>Heavy Metal</h3>
-            <p>Subtitle</p>
           </div>
           <div class="card">
             <div class="img-box">
-              <img src="" alt="">
+              <img src="img/split.jpeg" alt="">
+              <h3>Heavy Metal</h3>
+              <p>Subtitle</p>
             </div>
-            <h3>Heavy Metal</h3>
-            <p>Subtitle</p>
           </div>
           <div class="card">
             <div class="img-box">
-              <img src="" alt="">
+              <img src="img/cure.jpeg" alt="">
+              <h3>Heavy Metal</h3>
+              <p>Subtitle</p>
             </div>
-            <h3>Heavy Metal</h3>
-            <p>Subtitle</p>
           </div>
           <div class="card">
             <div class="img-box">
-              <img src="" alt="">
+              <img src="img/sinister.jpeg" alt="">
+              <h3>Heavy Metal</h3>
+              <p>Subtitle</p>
             </div>
-            <h3>Heavy Metal</h3>
-            <p>Subtitle</p>
-          </div>
-        </div>
-        <h2>Recently Played</h2>
-        <div class="recently-list d-flex">
-          <div class="card">
-            <div class="img-box">
-              <img src="" alt="">
-            </div>
-            <h3>Heavy Metal</h3>
-            <p>Subtitle</p>
-          </div>
-          <div class="card">
-            <div class="img-box">
-              <img src="" alt="">
-            </div>
-            <h3>Heavy Metal</h3>
-            <p>Subtitle</p>
           </div>
         </div>
-        <div class="recently-list d-flex">
+        <h2>Creato per John Doe</h2>
+        <p>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</p>
+        <div class="right-section d-flex">
           <div class="card">
             <div class="img-box">
-              <img src="" alt="">
+              <img src="img/radar.jpeg" alt="">
+              <h3>Release Radar</h3>
             </div>
-            <h3>Heavy Metal</h3>
-            <p>Subtitle</p>
           </div>
           <div class="card">
             <div class="img-box">
-              <img src="" alt="">
+              <img src="img/mixdaily.jpeg" alt="">
+              <h3>Daily Mix 1</h3>
             </div>
-            <h3>Heavy Metal</h3>
-            <p>Subtitle</p>
+          </div>
+        </div>
+        <h2>Artisti Pi&ugrave; popolari</h2>
+        <p>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</p>
+        <div class="right-section d-flex">
+          <div class="card">
+            <div class="img-box">
+              <img src="img/youg.jpeg" alt="">
+              <h3>Heavy Metal</h3>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-box">
+              <img src="img/einaudi.jpeg" alt="">
+              <h3>Heavy Metal</h3>
+            </div>
           </div>
         </div>
       </div>

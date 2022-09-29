@@ -25,7 +25,9 @@
     display: block;
   }
   header .logo{
-    padding-left: 20px;
+    width: 10%;
+    padding-left: 0;
+    justify-content: center;
   }
   #hidden-logo{
     display: block;

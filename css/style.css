@@ -28,8 +28,18 @@ a{
   background-color: rgba(127, 255, 212, 0.411);
 }
 
+/* --------------------------HIDDEN----------------------------- */
+#hidden{
+  display: none;
+}
+#hidden-logo{
+  display: none;
+}
+
+
 /* --------------------------header----------------------------- */
 header{
+  z-index: 999;
   position: fixed;
   top: 0;
   right: 0;
@@ -40,6 +50,7 @@ header{
   background-color: #080b1265;
 }
 .logo{
+  width: 20%;
   padding-left: 30px;
 }
 .logo img{
@@ -67,16 +78,19 @@ main{
   padding-top: 100px;
   width: 20%;
   background-color: #000000;
+  
 }
  .left-menu{
+  
   padding-left: 20px;
   width: 100%;
   height: 100%;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   flex-direction: column;
   color: #717171;
 } 
 .left-menu *{
+  
   padding-bottom: 8px;
 }
 
@@ -97,6 +111,8 @@ main{
 }
 .user{
   padding-top: 15px;
+  color: white;
+  font-weight: bold;
 }
 .bottom-left-menu .user img{
   background-color: lightgray;
@@ -111,12 +127,9 @@ main{
   border-radius: 50%;
   vertical-align: middle;
 }
-/* --------------------------HIDDEN----------------------------- */
-#hidden{
-  display: none;
-}
-#hidden-logo{
-  display: none;
+.of-scroll{
+  overflow-y: auto;
+  height: 70%;
 }
 
 /* --------------------------right menu----------------------------- */
@@ -157,9 +170,12 @@ main{
   width: 90%;
   max-width: 220px;
   padding: 15px 0;
+  position: relative;
 }
+
 .img-box img{
   width: 100%;
+  
 }
 
 .right-menu h2, h3, p{
@@ -179,6 +195,7 @@ footer{
 }
 /* LEFT FOOTER */
 .left-f{
+  z-index: 999;
   width: 20%;
   padding-left: 10px;
   align-items: center;
@@ -216,9 +233,20 @@ footer{
 .time-bar{
   align-self: center;
   height: 5px;
-  width: 430px;
+  width: 100%;
   background-color: darkgray;
+  cursor: pointer;
 }
+.time-bar:hover .song-length{
+
+  height: 5px;
+  width: 25%;
+  background-color: green;
+}
+/* .time-bar .song-length i{
+  width: 25%;
+} */
+
 
 /* RIGHT FOOTER */
 .right-f{
@@ -237,3 +265,60 @@ footer{
   background-color: darkgray;
   
 }
+
+/* ------------ HOVERS EFFECTS AND DECORATIONS --------------------- */
+
+.upgrade:hover{
+  scale: 1.1;
+}
+.line{
+  margin: 0 auto;
+  height: 5px;
+  width: 30px;
+  background-color: green;
+}
+a{
+  transition: .5s;
+}
+a:hover{
+  color: white;
+}
+i{
+  transition: .5s;
+}
+.create-pl span{
+  display: inline-block;
+  vertical-align: middle;
+  height: 80%;
+  margin-left: 5px;
+}
+.create-pl:hover{
+  cursor: pointer;
+  color: white;
+}
+.create-pl i{
+  font-size: 2rem;
+}
+.of-scroll li:hover{
+  color: white;
+}
+
+i:hover{
+  color: white;
+  cursor: pointer;
+}
+.player .fa-circle-play{
+  scale: 1.1;
+  transition: .5s;
+}
+.player .fa-circle-play:hover{
+  scale: 1.3;
+}
+.artist-title a:hover{
+  text-decoration: underline;
+}
+
+
+/* body *{
+  transition: .5s;
+} */

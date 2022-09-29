@@ -13,7 +13,7 @@
   <!-- ---------------HEADER------------------------- -->
   <header class="d-flex">
 
-    <div class="logo">
+    <div class="logo d-flex">
       <img id="hidden-logo" src="img/logo-small.svg" alt="">
       <img id="standard-logo" src="img/logo.svg" alt="">
     </div>
@@ -63,7 +63,7 @@
           <span>Crea Playlist</span>
         </div>
       
-        <ul class="">
+        <ul class="of-scroll">
           <li><a href="#">Nome Playlist</a></li>
           <li><a href="#">Nome Playlist</a></li>
           <li><a href="#">Nome Playlist</a></li>
@@ -75,7 +75,7 @@
         <div class="bottom-left-menu d-flex">
           <div class="dwnld-app">
             <img src="img/download.svg" alt="">
-            <span>Installa App</span>
+            <span><a href="">Installa App</a> </span>
           </div>
           <div class="user">
             <img src="img/profile.svg" alt="">
@@ -93,7 +93,9 @@
       <div class="right-menu">
         <nav class="right-nav">
           <ul class="d-flex">
-            <li><a href="#">IN EVIDENZA</a></li>
+            <li><a href="#">IN EVIDENZA</a>
+            <div class="line"></div>
+            </li>
             <li><a href="#">PODCAST</a></li>
             <li><a href="#">CLASSIFICHE</a></li>
             <li><a href="#">GENERI E MOOD</a></li>
@@ -152,7 +154,9 @@
         <div class="right-section d-flex">
           <div class="card">
             <div class="img-box">
-              <img src="img/radar.jpeg" alt="">
+              <img class="front-img" src="img/radar.jpeg" alt="">
+              
+              
               <h3>Release Radar</h3>
             </div>
           </div>
@@ -190,7 +194,7 @@
       </div>
       <div class="artist-title">
         <h4>Sinister</h4>
-        <span>Brano Nome</span>
+        <span><a href="">Brano Nome</a></span>
       </div>
       <i class="fa-regular fa-heart"></i>
       <i class="fa-regular fa-folder"></i>
@@ -205,7 +209,11 @@
       </div>
       <div class="length-player d-flex">
         <span>0.25</span>
-        <div class="time-bar"></div>
+        <div class="time-bar">
+          <div class="song-length">
+          </div>
+          <i class="fa-solid fa-circle"></i>
+        </div>
         <span>4.35</span>
       </div>
     </div>

@@ -156,6 +156,7 @@ main{
 .card{
   width: calc(100% / 6);
   text-align: center;
+  
 }
 /* Separate card CALC */
 /* Right section */
@@ -173,10 +174,31 @@ main{
   position: relative;
 }
 
+
+.back-img {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  transition: .5s;
+}
 .img-box img{
   width: 100%;
-  
+  cursor: pointer;
+  transition: .5s;
 }
+.img-box:hover .back-img{
+  display: block;
+}
+.img-box:hover img{
+  filter: contrast(2) grayscale(4);
+
+}
+
+
+
 
 .right-menu h2, h3, p{
   padding: 15px 0;
@@ -284,6 +306,7 @@ a:hover{
   color: white;
 }
 i{
+  color: rgb(165, 165, 165);
   transition: .5s;
 }
 .create-pl span{
